@@ -1,0 +1,13 @@
+In this session, you learnt the following:
+
+* What a data warehouse is
+* The differences between a data warehouse and a transactional database
+* OLAP (Online Analytical Processing) systems are Subject-oriented, Integrated, Non-volatile and Time-variant
+* A data warehouse provides an integrated view of the entire organisation and the data is organised for carrying out analysis efficiently
+* Facts and dimensions and how to arrange them in order to design a data warehouse
+* Dimension tables act as metadata, which is data about data, and enhance the facts table to enhance the insights from the data
+* What a star schema is
+* The advantages of having a star schema in a database
+* The SETL process: Select, Extract, Transform and Load
+* The different types of constraints: Entity, Referential and Semantic constraints
+* ERDs and their constituents
