@@ -29,3 +29,32 @@ SELECT
  
 While Data Definition Language statements are used to alter the structure of a database, Data Manipulation Language statements are used to change the data itself that is present inside the database.
 ================================================================================================================================================================================================================================================================================================
+In this session, you understood the crux of SQL queries. These are the basic concepts of SQL, which will be tested rigorously in your interviews. Hence, we urge you to practise all you can and develop a deep understanding of the various SQL statements.
+Now, you learnt that a complete query (in a sense) has the following basic outline:
+
+select (attributes)
+
+from (table)
+
+where (filter_condition)
+
+group by (attributes_to_be_grouped_upon)
+
+having (filter_condition_on_grouped_values)
+
+order by (values)
+
+limit (no_of_values_to_display);
+
+ 
+
+You also learnt about the following important concepts related to basic SQL querying:
+* Relational, arithmetic and logical operators
+* Aggregate functions
+* Regular expressions
+* Nested queries
+* Common Table Expressions
+* Views
+* Advantages of views over CTEs 
+
+================================================================================================================================================================================================================================================================================================
