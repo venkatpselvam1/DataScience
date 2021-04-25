@@ -1,3 +1,4 @@
+================================================================================================================================================================================================================================================================================================
 In this session, you learnt the following:
 
 * What a data warehouse is
@@ -11,3 +12,20 @@ In this session, you learnt the following:
 * The SETL process: Select, Extract, Transform and Load
 * The different types of constraints: Entity, Referential and Semantic constraints
 * ERDs and their constituents
+
+================================================================================================================================================================================================================================================================================================
+In this session, you learnt how to set up a schema and make it ripe for analysis using various DDL (Data Definition Language) and DML (Data Manipulation Language) statements in MySQL.
+The DDL statements are:
+
+CREATE
+ALTER
+DROP
+
+The DML statements are:
+INSERT
+UPDATE
+DELETE
+SELECT
+ 
+While Data Definition Language statements are used to alter the structure of a database, Data Manipulation Language statements are used to change the data itself that is present inside the database.
+================================================================================================================================================================================================================================================================================================
