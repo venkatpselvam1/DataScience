@@ -115,3 +115,13 @@ print(e)
 print(np.hstack((c,d)))
 print(np.vstack((c,e)))
 print("-------")
+
+
+a=np.full((2,4),5)
+print(a)
+print(a.reshape((8,)))
+print(a.reshape((4,2)))
+b=np.arange(30)
+print(b)
+print(b.reshape(2,15))
+print(b.reshape(3,2,5))
