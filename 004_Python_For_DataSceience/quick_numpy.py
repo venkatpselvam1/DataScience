@@ -58,3 +58,34 @@ print(skills)
 print(skills == "Keeper")
 print(players_converted[skills == "Batsman"])
 print(players_converted[skills == "Batsman"][:,0].shape)
+
+import numpy as np
+print(np.ones(7, dtype=int))
+print(np.zeros(7, dtype=int))
+print(np.arange(-5,1))
+print(np.arange(-50,1,3))
+#print(np.arange(-5,2.1,0.1))
+print(np.random.randint(4,10, size=10))
+#help(np.arange)
+#help(np.random.randint)
+print(np.random.random([3,3]))
+#help(np.random.random)
+#sometime you know the length of the array and not the step size
+print(np.linspace(1,10,20))
+print(np.linspace(1,10,5))
+
+
+
+print(np.full((3,4), 3))
+print(np.tile(np.array([1,2,3]),1))
+print(np.tile(np.array([1,2,3]),2))
+print(np.tile(np.array([1,2,3]),3))
+print(np.tile(np.array([1,2,3]),(1,3)))
+print(np.tile(np.array([1,2,3]),(2,3)))
+print(np.tile(np.array([1,2,3]),(3,3)))
+print(np.tile(np.array([1,2,3]),(3,3,3)))
+print(np.tile(np.array([1,2,3]),(3,3,1)))
+#help(np.tile)
+
+print(np.eye(5,3,dtype=int,k=-3))
+help(np.eye)
