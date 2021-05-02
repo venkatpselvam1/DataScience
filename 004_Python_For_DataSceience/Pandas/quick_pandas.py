@@ -34,3 +34,21 @@ cars_data_frame.columns= ['country_code','region','country','cars_per_cap','driv
 print(cars_data_frame)
 cars_data_frame.set_index(["region", "country_code"], inplace=True)
 print(cars_data_frame)
+
+# All imports
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Read file 
+sales = pd.read_excel('sales.xlsx')
+sales = pd.read_excel('sales.xlsx', index_col=[0, 1])
+print(sales.head())
+print(sales.head(3))#print(sales.tail())
+print(sales.head())
+print(sales.info())
+print(sales.describe())
+print(sales["Profit"])
+print(sales[["Profit", "Sales"]])
+sales[["Profit", "Sales", "No_of_Orders"]].plot(kind="box", subplots=True)
+plt.show()
