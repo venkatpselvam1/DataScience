@@ -105,3 +105,43 @@ profit = np.array([-5428.79, 7001.73, -3706.46, 300.42, -1697.31, -11222.71, 164
 plt.hist(profit, bins=100, edgecolor="yellow", color="red")
 plt.show()
 ================================================================================================================
+sub plots
+================================================================================================================
+import numpy as np
+import matplotlib.pyplot as plt
+
+years = np.array(['2012', '2013', '2014', '2015'])
+
+sales_africa = np.array([127187.27, 144480.70, 229068.79, 283036.44])
+
+sales_USCA = np.array([492756.60, 486629.30, 627634.98, 757108.13])
+
+sales_LATAM = np.array([385098.15, 464733.29, 608140.77, 706632.93])
+
+sales_Asia_Pacific = np.array([713658.22, 863983.97, 1092231.65, 1372784.40])
+
+sales_Europe = np.array([540750.63, 717611.40, 848670.24, 1180303.95])
+
+fig, ax = plt.subplots()
+
+afr, =ax.plot(years, sales_africa)
+afr.set_label("africa")
+afr.set_dashes([1,3])
+
+usa, =ax.plot(years, sales_USCA)
+usa.set_label("USA")
+usa.set_dashes([2, 5, 5, 2])
+
+latm, =ax.plot(years, sales_LATAM)
+latm.set_label("LATM")
+latm.set_dashes([2, 10, 10 , 2])
+
+pac, =ax.plot(years, sales_Asia_Pacific)
+pac.set_label("PACIFIC")
+pac.set_dashes([2, 2])
+
+plt.legend()
+plt.legend(bbox_to_anchor=(1.31,0.4))
+
+plt.show()
+================================================================================================================
