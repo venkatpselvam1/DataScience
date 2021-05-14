@@ -145,3 +145,57 @@ plt.legend(bbox_to_anchor=(1.31,0.4))
 
 plt.show()
 ================================================================================================================
+sub plots 2 
+================================================================================================================
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+years = np.array(['2012', '2013', '2014', '2015'])
+
+sales_africa = np.array([127187.27, 144480.70, 229068.79, 283036.44])
+
+sales_USCA = np.array([492756.60, 486629.30, 627634.98, 757108.13])
+
+sales_LATAM = np.array([385098.15, 464733.29, 608140.77, 706632.93])
+
+sales_Asia_Pacific = np.array([713658.22, 863983.97, 1092231.65, 1372784.40])
+
+sales_Europe = np.array([540750.63, 717611.40, 848670.24, 1180303.95])
+
+fig, ax = plt.subplots(ncols=3, nrows=2, sharex=True, sharey=True)
+
+afr, =ax[0,0].plot(years, sales_africa)
+afr.set_label("Africa")
+ax[0,0].set_title("Afric")
+
+usca =ax[0,1].bar(years, sales_USCA)
+#usca.set_color("red")
+usca.set_label("USA")
+ax[0,1].set_title("USA")
+
+latm =ax[0,2].scatter(years, sales_LATAM)
+latm.set_label("LATM")
+ax[0,2].set_title("LATM")
+
+pac, =ax[1,0].plot(years, sales_Asia_Pacific)
+pac.set_label("Pacific")
+ax[1,0].set_title("Pacific")
+
+eur, =ax[1,1].plot(years, sales_Europe)
+eur.set_label("europe")
+eur.set_color("red")
+ax[1,1].set_title("red")
+eur.set_dashes([2, 2, 10, 2])
+
+asia = ax[1,2].bar(years, sales_Asia_Pacific, width = 0.5, color='royalblue')
+
+latam = ax[1,2].bar(years, sales_LATAM, width = 0.5, color='seagreen')
+
+ax[1,2].set_title('Sales in Asia Pacific and LATAM')
+ax[1,2].legend( (asia[0], latam[0]), ('Asia Pacific', 'LATAM') )
+
+
+plt.show()
+
+================================================================================================================
