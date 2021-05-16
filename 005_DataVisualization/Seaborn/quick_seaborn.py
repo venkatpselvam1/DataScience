@@ -30,3 +30,10 @@ plt.show()
 inp1["Content Rating"].value_counts().plot.barh()
 plt.show()
 ====================================================================================================================================
+plt.scatter(inp1["Size"],inp1["Rating"])
+plt.show()
+sns.jointplot(inp1["Price"], inp1["Rating"], kind="reg")
+plt.show()
+sns.pairplot(inp1[["Rating","Price", "Size","Reviews"]])
+plt.show()
+====================================================================================================================================
