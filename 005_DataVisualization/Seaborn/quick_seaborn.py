@@ -17,3 +17,11 @@ sns.distplot(inp1["Rating"], kde=True, bins=15, color="red")
 plt.title("Distibution of app rating", fontdict={"fontweight":20,"fontsize":25, "color":"red"})
 plt.show()
 ====================================================================================================================================
+import seaborn as sns
+#sns.set_style("whitegrid")
+plt.style.use("ggplot")
+sns.distplot(inp1["Rating"], kde=True, bins=15, color="red")
+plt.title("Distibution of app rating", fontdict={"fontweight":20,"fontsize":25, "color":"red"})
+#print(plt.style.available)
+plt.show()
+====================================================================================================================================
