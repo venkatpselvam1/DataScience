@@ -37,3 +37,8 @@ plt.show()
 sns.pairplot(inp1[["Rating","Price", "Size","Reviews"]])
 plt.show()
 ====================================================================================================================================
+#inp1.groupby(["Content Rating"])["Rating"].sum().plot.bar()
+#sns.barplot(data=inp1, x="Content Rating", y="Rating", estimator=np.median)
+#sns.barplot(data=inp1, x="Content Rating", y="Rating", estimator=lambda x: np.quantile(x, 0.05))
+plt.show()
+====================================================================================================================================
