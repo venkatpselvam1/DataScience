@@ -59,3 +59,10 @@ plt.show()
 sns.heatmap(res, cmap="Greens", annot=True)
 plt.show()
 ====================================================================================================================================
+datetimr=pd.DatetimeIndex( inp1["Last Updated"])
+inp1["month"]=datetimr.month
+#inp1.head()
+plt.figure(figsize=[7,7])
+inp1.groupby("month")["Rating"].mean().plot()
+plt.show()
+====================================================================================================================================
