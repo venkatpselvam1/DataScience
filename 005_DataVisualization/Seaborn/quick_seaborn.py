@@ -25,3 +25,8 @@ plt.title("Distibution of app rating", fontdict={"fontweight":20,"fontsize":25, 
 #print(plt.style.available)
 plt.show()
 ====================================================================================================================================
+inp1["Content Rating"].value_counts().plot.bar()
+plt.show()
+inp1["Content Rating"].value_counts().plot.barh()
+plt.show()
+====================================================================================================================================
