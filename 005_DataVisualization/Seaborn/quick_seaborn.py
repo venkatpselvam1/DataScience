@@ -52,3 +52,10 @@ print(inp2.shape)
 sns.barplot(data=inp2, x="Genres", y="Rating",estimator= lambda x: np.quantile(x, 0.05))
 plt.show()
 ====================================================================================================================================
+inp1["Size Bucket"]=pd.qcut(inp1["Size"], [0,0.2,0.4,0.6,0.8,1],["A","B","C","D","E"])
+res=pd.pivot_table(data=inp1, index="Content Rating", columns="Size Bucket", values="Rating", aggfunc=lambda x:np.quantile(x, 0.2))
+sns.heatmap(res)
+plt.show()
+sns.heatmap(res, cmap="Greens", annot=True)
+plt.show()
+====================================================================================================================================
