@@ -13,3 +13,7 @@ import seaborn as sns
 sns.distplot(inp1["Rating"], kde=True, bins=15, horizontal=False)
 plt.show()
 ====================================================================================================================================
+sns.distplot(inp1["Rating"], kde=True, bins=15, color="red")
+plt.title("Distibution of app rating", fontdict={"fontweight":20,"fontsize":25, "color":"red"})
+plt.show()
+====================================================================================================================================
