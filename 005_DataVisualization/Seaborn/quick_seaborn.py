@@ -42,3 +42,13 @@ plt.show()
 #sns.barplot(data=inp1, x="Content Rating", y="Rating", estimator=lambda x: np.quantile(x, 0.05))
 plt.show()
 ====================================================================================================================================
+Top4 Genres
+====================================================================================================================================
+top4=inp1["Genres"].value_counts()[:4].index
+#print(list(top4))
+print(inp1.shape)
+inp2=inp1[inp1["Genres"].isin(top4)]
+print(inp2.shape)
+sns.barplot(data=inp2, x="Genres", y="Rating",estimator= lambda x: np.quantile(x, 0.05))
+plt.show()
+====================================================================================================================================
