@@ -66,3 +66,8 @@ plt.figure(figsize=[7,7])
 inp1.groupby("month")["Rating"].mean().plot()
 plt.show()
 ====================================================================================================================================
+res1=pd.pivot_table(data=inp1, index="month",columns="Content Rating", values="Installs", aggfunc=np.median)
+res1.plot(kind="bar", stacked=True, figsize=[10,6])
+res2=res1[["Everyone", "Everyone 10+", "Mature 17+", "Teen"]].apply(lambda x : x/x.sum(), axis=1)
+res2.plot(kind="bar", stacked=True, figsize=[10,6])
+====================================================================================================================================
