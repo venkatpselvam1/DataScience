@@ -3,3 +3,6 @@
 2. Data cleaning
 3. Univariate analysis
 4. Bivariate and multivariate analysis
+
+Public dataset
+https://github.com/awesomedata/awesome-public-datasets
