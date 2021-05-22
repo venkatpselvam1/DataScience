@@ -1,0 +1,34 @@
+Summary
+Univariate analysis is the analysis of a single variable at a time. This particular variable can be ordered or unordered, or it may be a numerical variable. So, based on the types of variables, the whole understanding of univariate analysis is divided into the following parts:
+
+Categorical unordered univariate analysis: Unordered variables are those variables that do not contain any notion of ordering, for example, increasing or decreasing order. These are just various types of any category. The examples can be job types, marital status, blood groups, etc.
+
+ 
+
+Categorical ordered univariate analysis: Ordered variables are those that have some kind of ordering in them, like high-low, fail-success, yes or no. Examples can be education level, salary group like high or low, gradings in any exam, etc.
+
+ 
+
+Numerical variable univariate analysis: Numerical variables can be classified into continuous and discrete type. To analyse numerical variables, you need to have an understanding of statistic metrics like mean, median, mode, quantiles, and box plots, etc. It is important to understand that numerical variable univariate analysis is nothing but what we have done earlier, i.e., the treatment of missing values and handling outliers. The crux of univariate analysis lies in the single variable analysis, which is covered in the process of cleaning the dataset.
+ 
+
+The transition of a numerical variable into a categorical variable: This is an important aspect that you need to think about before performing univariate analysis. Sometimes, it is essential to just convert numerical variables into categorical ones, through a process which is called 'binning'.
+
+     
+
+Let's summarise univariate analysis on the Bank Marketing Campaign dataset.
+
+You have seen that there is a variable called "marital" in the Bank Marketing dataset. This is categorical unordered variable. You have seen that the bank has contacted mostly married people, as can be seen in the image below.
+
+
+ 
+
+There is a variable called "education" in the Bank Marketing dataset. This is a categorical ordered variable because there is ordering of education levels, like primary, secondary and tertiary education. You have seen that the bank has mostly contacted people who have completed secondary education, as can be seen in the image below.
+
+
+ 
+
+You have already performed univariate analysis on numerical variables in the process of missing values treatment and handling outliers. You have seen that there are no outliers in the "age" variable, as the values of age like 80 or 90 are also genuine values. There are higher values in 'balance' and 'salary' variables, which can be treated as outliers. Hence, it can be avoided while performing the analysis. 
+ 
+
+Hence, univariate analysis is nothing but an analysis of one particular variable at a time. It is important to look at each and every variable and perform analysis on it.
