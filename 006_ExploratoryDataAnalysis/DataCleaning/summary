@@ -1,0 +1,31 @@
+Summary
+Having completed this session, you must be clear about the various irregularities that can be present in a data set. They can be unfixed rows/columns, missing values, outliers or may even be in the form of un-standard/un-scaled data, etc. 
+
+ 
+
+Let’s summarise the steps in Data Cleaning:
+
+Fixing the rows and columns: You need to remove the irrelevant columns and heading lines from the dataset. The irrelevant columns or rows are those that are of absolutely no use for analysis on the data set. Like in the Bank Marketing Dataset, the headers and customer ID columns are of absolutely no use.
+Remove/impute the missing values: There are different types of missing values in the dataset. Based on their type and origin, you need to take a decision regarding whether they can be removed if their percentage is too low, or whether they can be considered as a separate category. There is an important possibility where you need to impute missing values with some other value. While doing imputation, one should be very careful because it should not add any wrong information into the dataset. The imputation can be done using mean, median, mode or using quantile analysis.
+Outlier handling: Outliers are those points which are beyond the normal trend. There are two types of outliers: 
+Univariate 
+
+Multivariate 
+
+ 
+
+An important aspect that has been covered is that outliers should not always be treated as anomalies in the dataset. You can understand this using the Bank Marketing Dataset itself, where age has outliers, but these high values of age are as relevant as other values.
+
+Standardising values: Sometimes, there are many entries in the dataset which are not in the correct format. Like you have seen in the Bank Marketing dataset itself, the duration of the call is in seconds and minutes. It has to be in the same format. The other standardisation involves the unit and precision standardisation. 
+Fixing invalid values: Sometimes, there are some values in the dataset that are invalid, maybe in the form of their unit, range, data type, format, etc. It is essential to deal with these types of irregularities before processing the dataset. 
+Filter data: Sometimes, filtering out certain details can help you get a clearer picture of the dataset. 
+ 
+
+It is very important to get rid of such irregularities to be able to analyse a dataset. Otherwise, it may hamper further analysis of the dataset, either while building a machine learning model or in EDA itself.
+
+ 
+
+Now that you are done with the process of data cleaning, the next important step is data analysis. This is covered in the following two sessions:
+
+Univariate analysis
+Bivariate/multivariate analysis.
