@@ -1,0 +1,24 @@
+As explained in the video, probability values have the following two major properties:
+
+Probability values always lie in the range of 0 to 1. 
+The value is 0 in the case of an impossible event (like the probability of you being in Delhi and Mumbai at the same time) and 1 in the case of a sure event (like the probability of the sun rising in the east tomorrow).
+
+The probabilities of all outcomes for an experiment always sum up to 1. For example, in a coin toss, there can be two outcomes, heads or tails. The probability of both of the outcomes is 0.5 each. Hence, the sum of the probabilities turns out to be 0.5 + 0.5 = 1.
+Next, you learnt a couple of definitions that are crucial in understanding probability. They are as follows:
+
+Experiment:
+Essentially, any scenario for which you want to compute the probabilities is considered to be an experiment.
+
+It is of the following two types:
+1. Deterministic: 
+Outcome is the same every time.
+
+2. Random:
+Outcome can take many possible values. Throughout the majority of our business analytics course, we will only be discussing the random experiment.
+
+Sample space:
+A sample space is nothing but the list of all possible outcomes of a random experiment. 
+It is denoted by S = {all the possible outcomes}. For example, in the coin toss example, the sample space S = {H, T}, where H = heads and T = tails.
+Event: It is a subset, i.e., a part of the sample space that you want to be true for your probability experiment.
+For example, if in a coin toss you want heads to be the desired outcome, then the event becomes {H}. As you can see clearly, {H} is a part of {H, T}.
+ 
