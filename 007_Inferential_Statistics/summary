@@ -56,3 +56,8 @@ The probability of selecting three bowlers from a list of four, and so on
 Now, what about two events occurring simultaneously? For example, what would be the probability of selecting an ace card or a heart card from the deck?
 How would this specific probability relate to the individual probabilities, i.e., the probability of getting a heart card separately and the probability of getting an ace card separately?
 This is something that you will get to learn using the two important rules related to probability – addition and multiplication. First, we will discuss the addition rule in the upcoming video.
+
+
+P(A U B) = P(A)+P(B) - P(A intersection B)   => Rule of addition
+P(A and B) = P(A)*P(B)                       => Rule of multiplication
+
