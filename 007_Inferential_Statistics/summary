@@ -3,7 +3,8 @@ As explained in the video, probability values have the following two major prope
 Probability values always lie in the range of 0 to 1. 
 The value is 0 in the case of an impossible event (like the probability of you being in Delhi and Mumbai at the same time) and 1 in the case of a sure event (like the probability of the sun rising in the east tomorrow).
 
-The probabilities of all outcomes for an experiment always sum up to 1. For example, in a coin toss, there can be two outcomes, heads or tails. The probability of both of the outcomes is 0.5 each. Hence, the sum of the probabilities turns out to be 0.5 + 0.5 = 1.
+The probabilities of all outcomes for an experiment always sum up to 1. For example, in a coin toss, there can be two outcomes, heads or tails.
+The probability of both of the outcomes is 0.5 each. Hence, the sum of the probabilities turns out to be 0.5 + 0.5 = 1.
 Next, you learnt a couple of definitions that are crucial in understanding probability. They are as follows:
 
 Experiment:
@@ -22,3 +23,24 @@ It is denoted by S = {all the possible outcomes}. For example, in the coin toss 
 Event: It is a subset, i.e., a part of the sample space that you want to be true for your probability experiment.
 For example, if in a coin toss you want heads to be the desired outcome, then the event becomes {H}. As you can see clearly, {H} is a part of {H, T}.
  
+Types of Events
+In the previous segment, you understood how probability is defined formally and also learnt some of its properties.
+You were also introduced to the concept of 'events', situations or scenarios for which we compute the probabilities.
+In this segment, we will take a look at the different types of 'events' that can be defined.
+Note that earlier you considered a single event for which you computed the probabilities. Now, you will look at two or more events and understand how they are related to each other.
+
+ 
+
+The two main categories of events that you need to know right now are independent events and disjoint or mutually exclusive events. Let's learn their formal definitions.
+
+ 
+
+1. Independent events:
+If you have two or more events and the occurrence of one event has no bearing whatsoever on the occurrence/s of the other event/s, then all the events are said to be independent of each other.
+For example, the chances of rain in Bengaluru on a particular day has no effect on the chances of rain in Mumbai 10 days later.
+Hence, these two events are independent of each other. 
+
+2. Disjoint or mutually exclusive events:
+Now, two or more events are mutually exclusive when they do not occur at the same time, i.e., when one event occurs, the rest of the events do not occur.
+For example, if a student has been assigned grade C for a particular subject in an exam, he or she cannot be awarded grade B for the same subject in the same exam.
+So, the events in which a student gets a grade of B or C for the same subject in the  same exam are mutually exclusive or disjoint.
