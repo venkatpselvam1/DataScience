@@ -44,3 +44,15 @@ Hence, these two events are independent of each other.
 Now, two or more events are mutually exclusive when they do not occur at the same time, i.e., when one event occurs, the rest of the events do not occur.
 For example, if a student has been assigned grade C for a particular subject in an exam, he or she cannot be awarded grade B for the same subject in the same exam.
 So, the events in which a student gets a grade of B or C for the same subject in the  same exam are mutually exclusive or disjoint.
+
+
+Rules of Probability - Addition
+In the previous examples, we were always involved in finding the probability of a single event. For example: 
+
+The probability of getting an ace card from a deck of 52 cards
+The probability of selecting three bowlers from a list of four, and so on
+ 
+
+Now, what about two events occurring simultaneously? For example, what would be the probability of selecting an ace card or a heart card from the deck?
+How would this specific probability relate to the individual probabilities, i.e., the probability of getting a heart card separately and the probability of getting an ace card separately?
+This is something that you will get to learn using the two important rules related to probability – addition and multiplication. First, we will discuss the addition rule in the upcoming video.
