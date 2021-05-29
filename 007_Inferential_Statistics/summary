@@ -118,3 +118,7 @@ Finally, you also saw a comparison between the addition rule and the multiplicat
 If the question mentions an 'OR' to denote the relationship between the events, then you need to apply the addition rule.
 That is, either of the given events can occur at that time, P(Event A or Event B). Else, if an 'AND' is used to denote the relationship between the events, then the multiplication rule is used.
 Here, the events need to happen simultaneously and must be independent, P(Event A and Event B).
+
+the formula for finding binomial probability is given by:
+nCr*Pr*(1-P)(n-r)
+
