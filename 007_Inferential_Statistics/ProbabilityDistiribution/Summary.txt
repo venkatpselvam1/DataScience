@@ -3,3 +3,8 @@ Probability Density Functions
  CDF, or a cumulative distribution function, is a distribution that plots the cumulative probability of X against X.
  A PDF, or a Probability Density Function, however, is a function in which the area under the curve gives you the cumulative probability.
  
+ Normal Distibution : https://en.wikipedia.org/wiki/Normal_distribution
+ Exponential Distribution
+ Gamma Distribution
+ Chi-Squared Distribution
+ 
