@@ -21,3 +21,13 @@ select row_number() over(order by name desc) as name_row,
 *
  from mytable
 
+-- Partition
+-- Partition will first order the result by typeid, and then it will order by the name and assign rank
+--e.g
+OriginalData    (1, 100), (1, 100), (2, 90), (2, 85), (2, 75), (3, 100), (33, 95) --(type id, name)
+Rank                   1,        1,       1,      2,        3,        1,      2
+select row_number() over( partition by typeid order by name desc) as name_row,
+*
+ from mytable-- order by Name desc
+ 
+ 
