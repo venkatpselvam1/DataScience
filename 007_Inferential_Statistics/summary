@@ -120,5 +120,5 @@ That is, either of the given events can occur at that time, P(Event A or Event B
 Here, the events need to happen simultaneously and must be independent, P(Event A and Event B).
 
 the formula for finding binomial probability is given by:
-nCr*Pr*(1-P)(n-r)
+nCr * P ^ r * (1-P) ^ (n-r)
 
