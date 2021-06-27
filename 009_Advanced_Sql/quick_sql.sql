@@ -49,4 +49,14 @@ select row_number() over( partition by typeid order by name desc) as name_row,
 90   3  11   270  90
   
 ---------------------------------------------------------------------------------------------------------------------------  
-  
+--Frames
+--Moving count and moving averages using frames
+select id,
+sum() over (order by id rows unbounded preceding) as running_total,
+avg(id) over (order by id rows 5 preceding) as running_average
+from mytable
+--example
+--Original value   1, 2, 3,  4,  5, 6,   7,  8,  9, 10
+--sum              1, 3, 6, 10, 15, 21, 28, 36, 45, 55
+--moving average   1, 2, 2,  2,  3,  3,  4,  5, 6,   7   --how it is 7 in the last columns = (10 + (9+8+7+6+5)) / 6 = 45 / 6 = 7
+--we mentioned 5, so it will take current row + 5 before columns
