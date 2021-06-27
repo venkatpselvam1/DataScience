@@ -60,3 +60,25 @@ from mytable
 --sum              1, 3, 6, 10, 15, 21, 28, 36, 45, 55
 --moving average   1, 2, 2,  2,  3,  3,  4,  5, 6,   7   --how it is 7 in the last columns = (10 + (9+8+7+6+5)) / 6 = 45 / 6 = 7
 --we mentioned 5, so it will take current row + 5 before columns
+---------------------------------------------------------------------------------------------------------------------------  
+-- Lead and Lag
+with result as
+(
+select LEAD(id, 1, GETUTCDATE()) over (order by id) as next_id,
+id
+ from mytable
+ ) select *, DATEDIFF(day, id, next_id) from result;
+ --original value - 100, 90, 85, 82, 80, 79, 75, 70
+ --using lead     - 90,85, 82, 80, 79, 75, 70, 10
+ --with default 10 
+ 
+ with result as
+(
+select lag(id, 1, GETUTCDATE()) over (order by id) as next_id,
+id
+ from mytable
+ ) select *, DATEDIFF(day, id, next_id) from result;
+ --original value - 100, 90, 85, 82, 80, 79, 75, 70
+ --using lag      - 10,100,90, 85, 82, 80, 79, 75
+ --with default 10 
+---------------------------------------------------------------------------------------------------------------------------  
