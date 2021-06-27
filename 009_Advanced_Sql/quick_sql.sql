@@ -82,3 +82,18 @@ id
  --using lag      - 10,100,90, 85, 82, 80, 79, 75
  --with default 10 
 ---------------------------------------------------------------------------------------------------------------------------  
+-- Case example
+with result as
+(select id, COUNT(1) as count from mytable
+group by id)
+select *,
+case
+ when count < 10 then 'low'
+ when count < 30 then 'medium'
+ when count > 30 then 'high'
+end as severity
+ from result;
+--0 - 10 => low
+--10- 30 => medium
+-- 30 <  > hight
+---------------------------------------------------------------------------------------------------------------------------  
