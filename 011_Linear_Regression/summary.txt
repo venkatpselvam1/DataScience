@@ -1,1 +1,9 @@
+Types of Machine Learning Algorithem:
+1. Regression
+  a. Predicting PA-1 scores of a Student
+  b. Output variable to be predicted is a continuouse variable
+2. Classification
+  a. Predticting particualr email is spam or ham
+  b. Output variable to be predicted is a categorial variable
+3. Clustering
 
