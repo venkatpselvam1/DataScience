@@ -1,0 +1,6 @@
+Topics that will be covered in this session are:
+1. Binary classification
+2. Sigmoid function
+3. Likelihood function
+4. Building a logistic regression model in Python
+5. Odds and log odds
